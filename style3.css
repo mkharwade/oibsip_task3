@@ -17,9 +17,18 @@ input{
 button{
     font-size: 23px;
     height: 57px;
-    background:lightgrey;
+    background:mediumpurple;
     width: 88px;
     border-radius: 9px;
+    color: white;
+}
+
+button:hover, button.focus{
+    animation: button 1s;
+    box-shadow: 0 0 0 2rem rgba(#fff 0);
+}
+@keyframes button{
+    0% {box-shadow: 0 0 0 var(--hover);}
 }
 
 .body{
@@ -29,7 +38,7 @@ button{
 }
 
 .calculator{
-    background-color: darkgray;
+    background-color: black;
     padding: 5px;
     border-radius: 9px;
     display: inline-block;
